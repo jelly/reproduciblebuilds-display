@@ -30,3 +30,10 @@ interrupt the deepsleep or reset the MCU, the easiest way to update
 ```boot.py``` is replugging the esp32, opening screen and pressing ctrl+c to
 interrupt the boot code so the esp32 does not go to sleep. Then ampy can be
 used again to upload a new ```boot.py```.
+
+# License
+
+The code is licensed MIT and the ```esp32/generic_dotstar.py``` code is taken
+from
+[micropython_generic_apa102](https://github.com/RobertJBabb/micropython_generic_apa102)
+library which is licensed MIT.
