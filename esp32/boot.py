@@ -7,6 +7,7 @@ import urequests
 
 from generic_dotstar import DotStar
 
+# Status url
 url = 'https://jenkins.debian.net/view/reproducible/view/Node_maintenance/job/reproducible_node_health_check_amd64_jenkins/badge/icon'
 
 # Pixel defines
@@ -70,4 +71,5 @@ if station.isconnected():
 else:
     staticdisplay(repro_color)
 
+# Sleep for 60 seconds
 deepsleep(60000)
