@@ -31,6 +31,10 @@ interrupt the deepsleep or reset the MCU, the easiest way to update
 interrupt the boot code so the esp32 does not go to sleep. Then ampy can be
 used again to upload a new ```boot.py```.
 
+# Example
+
+![](https://raw.githubusercontent.com/jelly/reproduciblebuilds-display/master/img/reprobuilds-display.jpeg)
+
 # License
 
 The code is licensed MIT and the ```esp32/generic_dotstar.py``` code is taken
