@@ -29,8 +29,11 @@ def connectwifi():
     station = network.WLAN(network.STA_IF)
     station.active(True)
     print('connecting to', ssid)
+
+    # Wait at maximum for 5 seconds since connecting can be slow
     station.connect(ssid)
     counter = 5
+
     while not station.isconnected():
         if counter < 0:
             print('wifi not found')
