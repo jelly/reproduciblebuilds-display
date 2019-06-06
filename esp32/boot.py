@@ -23,7 +23,7 @@ green_color = (68, 204, 17, intensity)
 red_color = (204, 0, 0, intensity)
 
 # Network SSID
-ssid = 'revspace-pub-2.4ghz'
+ssid = 'hamburg.freifunk.net'
 
 def connectwifi():
     station = network.WLAN(network.STA_IF)
@@ -32,11 +32,11 @@ def connectwifi():
     station.connect(ssid)
     counter = 5
     while not station.isconnected():
-        if counter > 0:
+        if counter < 0:
             print('wifi not found')
             break
         time.sleep(1)
-        counter = counter + 1
+        counter = counter - 1
 
     return station
 
