@@ -71,5 +71,8 @@ if station.isconnected():
 else:
     staticdisplay(repro_color)
 
+# Add sleep to allow ctrl-c
+time.sleep(10)
+
 # Sleep for 60 seconds
 deepsleep(60000)
