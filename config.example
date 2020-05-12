@@ -1,0 +1,7 @@
+# variables for the esp32
+SSID='My Network ESSID'
+PASSWORD='r00tme'
+NTPHOST='pool.ntp.org'
+
+# variables for host deploying from
+USBDEVICE=/dev/ttyUSB0
